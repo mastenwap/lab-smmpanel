@@ -1,8 +1,8 @@
 <?php
-$conn =new mysqli('localhost', 'root', 't3st3r12345!' , 'smmpanel');
+$conn =new mysqli('localhost', 'webaji', 't3st3r12345!' , 'smmpanel');
 
 $query = '';
-$sqlScript = file('database-script.sql');
+$sqlScript = file('database.sql');
 foreach ($sqlScript as $line)	{
 	
 	$startWith = substr(trim($line), 0 ,2);
